@@ -24,3 +24,12 @@ int yywrap()
 {
 return 1;
 }
+
+
+/*
+bison -d sample.y
+flex sample.l
+gcc lex.yy.c sample.tab.c -lfl
+./a.out
+
+*/
